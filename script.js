@@ -21,12 +21,15 @@ function calculateWorkingTime() {
     if (morningDiff < 0 || afternoonDiff < 0) {
       resultText = 'End times must be after start times.';
     } else {
-      resultText = `Total working time: ${totalDiff.toFixed(2)} hours.`;
+      const totalHours = Math.floor(totalDiff);
+      const totalMinutes = Math.round((totalDiff - totalHours) * 60);
+      resultText = `Total working time: ${totalHours} hours and ${totalMinutes} minutes.`;
+
       if (totalDiff < minTimeInHours) {
         const hoursNeeded = minTimeInHours - totalDiff;
         const hours = Math.floor(hoursNeeded);
         const minutes = Math.round((hoursNeeded - hours) * 60);
-        resultText += ` You need ${hours} hours and ${minutes} minutes more to reach the minimum working time of ${minTimeInHours} hours.`;
+        resultText += ` You need ${hours} hours and ${minutes} minutes more to reach the minimum working time of ${minTimeParts[0]}:${minTimeParts[1]}.`;
       }
     }
     document.getElementById('result').textContent = resultText;
