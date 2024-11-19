@@ -59,6 +59,7 @@ button:hover {
 
 .input-ctn {
   display: flex;
+  max-width: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
