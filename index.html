@@ -7,29 +7,31 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Working Time Calculator</h1>
-  
-  <h2>Morning Session</h2>
-  <label for="morning-start-time">Start Time:</label>
-  <input type="time" id="morning-start-time" value="08:00" required>
-  
-  <label for="morning-end-time">End Time:</label>
-  <input type="time" id="morning-end-time" value="12:00" required>
-  
-  <h2>Afternoon Session</h2>
-  <label for="afternoon-start-time">Start Time:</label>
-  <input type="time" id="afternoon-start-time" value="13:00" required>
-  
-  <label for="afternoon-end-time">End Time:</label>
-  <input type="time" id="afternoon-end-time" value="17:24" required>
-  
-  <h2>Minimum Time</h2>
-  <label for="minimum-time">Minimum Working Time (hours:minutes):</label>
-  <input type="time" id="minimum-time" value="08:24" required>
-  
-  <button onclick="calculateWorkingTime()">Calculate</button>
-  
-  <p id="result"></p>
+  <div class="container">
+    <h1>Working Time Calculator</h1>
+    
+    <h2>Morning Session</h2>
+    <label for="morning-start-time">Start Time:</label>
+    <input type="time" id="morning-start-time" value="08:00" required>
+    
+    <label for="morning-end-time">End Time:</label>
+    <input type="time" id="morning-end-time" value="12:00" required>
+    
+    <h2>Afternoon Session</h2>
+    <label for="afternoon-start-time">Start Time:</label>
+    <input type="time" id="afternoon-start-time" value="13:00" required>
+    
+    <label for="afternoon-end-time">End Time:</label>
+    <input type="time" id="afternoon-end-time" value="17:24" required>
+    
+    <h2>Minimum Time</h2>
+    <label for="minimum-time">Minimum Working Time (hours:minutes):</label>
+    <input type="time" id="minimum-time" value="08:24" required>
+    
+    <button onclick="calculateWorkingTime()">Calculate</button>
+    
+    <p id="result"></p>
+  </div>
   
   <script src="script.js"></script>
 </body>
