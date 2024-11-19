@@ -57,6 +57,14 @@ button:hover {
   text-align: center;
 }
 
+.input-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 10px;
