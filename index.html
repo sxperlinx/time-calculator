@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working Time Calculator</title>
+</head>
+<body>
+  <h1>Working Time Calculator</h1>
+  
+  <h2>Morning Session</h2>
+  <label for="morning-start-time">Start Time:</label>
+  <input type="time" id="morning-start-time" required>
+  
+  <label for="morning-end-time">End Time:</label>
+  <input type="time" id="morning-end-time" required>
+  
+  <h2>Afternoon Session</h2>
+  <label for="afternoon-start-time">Start Time:</label>
+  <input type="time" id="afternoon-start-time" required>
+  
+  <label for="afternoon-end-time">End Time:</label>
+  <input type="time" id="afternoon-end-time" required>
+  
+  <button onclick="calculateWorkingTime()">Calculate</button>
+  
+  <p id="result"></p>
+  
+  <script src="script.js"></script>
+</body>
+</html>
