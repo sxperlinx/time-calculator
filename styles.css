@@ -59,11 +59,10 @@ button:hover {
 
 .input-ctn {
   display: flex;
-  max-width: 100%;
+  max-width: 50%;
   flex-direction: row;
-  justify-content: center;
+  justify-content: between;
   align-items: center;
-  gap: 2px;
 }
 
 @media (max-width: 600px) {
