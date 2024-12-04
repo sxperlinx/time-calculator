@@ -1,10 +1,25 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
+  margin: 24px;
+  padding: 24px;
   background-color: #f4f4f4;
 }
+@media({ max-width: 700px }) {
+  body {
+    margin:0
+    padding:0
+  }
 
+  .container {
+    padding: 8px;
+  }
+
+  label {
+  display: block;
+  margin: 8px 0 5px;
+  font-weight: bold;
+  }   
+}
 .container {
   max-width: 100svw;
   margin: auto;
