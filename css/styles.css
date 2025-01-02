@@ -1,13 +1,32 @@
+:root {
+  --background-color: #f4f4f4;
+  --text-color: #333;
+  --border-color: #ccc;
+  --accent-color: #4CAF50;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #181818;
+    --text-color: #dbdbdb;
+    --border-color: #dbdbdb;
+    --accent-color: #4b9f4e;
+    --shadow-color: #1d1c1c;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 24px;
   padding: 24px;
-  background-color: #f4f4f4;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
-@media({ max-width: 700px }) {
+
+@media (max-width: 700px) {
   body {
-    margin:0
-    padding:0
+    margin: 0;
+    padding: 0;
   }
 
   .container {
@@ -25,11 +44,11 @@ body {
   margin: auto;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 h1, h2 {
-  color: #333;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -43,27 +62,27 @@ input[type="time"], button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin: 10px 0;
   box-sizing: border-box;
 }
 
 input[type="time"] {
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
 }
 
 button {
-  background-color: #4CAF50;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--text-color);
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: var(--accent-color);
 }
 
 #result {
@@ -74,10 +93,11 @@ button:hover {
 
 .input-ctn {
   display: flex;
-  max-width: 50%;
   flex-direction: row;
-  justify-content: between;
+  justify-content: space-between;
   align-items: center;
+
+  width: 80%;
 }
 
 @media (max-width: 600px) {
